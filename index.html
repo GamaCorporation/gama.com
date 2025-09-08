@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logoGama.png">
+  <title>GAMA</title>
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/letras.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/carrossel.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="menu-overlay"></div>
+  <header class="navbar">
+    <div class="logo">GAMA</div>
+    <button class="menu-toggle">☰</button>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#quem-somos">Quem somos?</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#equipe">Equipe Gama</a></li>
+        <li><a href="#parceiros">Parceiros</a></li>
+        <li><a href="#fale-conosco">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO CARROSSEL -->
+  <section class="hero-carrossel">
+    <div class="carrossel">
+      <div class="carrossel-item ativo">
+        <div class="carrossel-conteudo">
+          <div class="carrossel-legenda">
+            <h1><span>Tecnologias</span> que transformam</h1>
+            <a href="#quem-somos" class="btn">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carrossel-item">
+        <div class="carrossel-conteudo">
+          <div class="carrossel-legenda">
+            <h1><span>Inovações</span> em cada passo</h1>
+            <a href="#projetos" class="btn">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carrossel-item">
+        <div class="carrossel-conteudo">
+          <div class="carrossel-legenda">
+            <h1><span>Modernidade</span> que conecta</h1>
+            <a href="#equipe" class="btn">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg class="wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+      <path fill="#ffffff" d="M0,250 C360,300 720,200 1080,250 C1320,280 1440,200 1440,200 L1440,300 L0,300 Z"></path>
+    </svg>
+
+    <!-- Indicadores -->
+    <div class="carrossel-indicadores">
+      <span class="dot ativo"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  
+  <!-- QUEM SOMOS -->
+  <section class="quem-somos" id="quem-somos">
+    <div class="container">
+      <h2>Quem somos?</h2>
+      <p>Somos uma empresa de tecnologia que cria soluções inteligentes, inovadoras e sob medida para o mundo digital trabalhando sempre com : </p>
+      <div class="cards">
+        <div class="card">
+          <img src="img/img1.png">
+          <h3>Inovação</h3>
+          <br>
+          <p>Inovamos para entregar mais aos nossos usuários.</p>
+        </div>
+        <div class="card" style="background-color: #070253;">
+          <img src="img/img2.png">
+          <h3>Compromisso e Impacto</h3>
+          <br>
+          <p>Excelência nos detalhes e compromisso na entrega.</p>
+        </div>
+        <div class="card">
+          <img src="img/img3.png">
+          <h3>Excelência e Qualidade</h3>
+          <br>
+          <p>Tecnologia com qualidade para transformar realidades.</p>
+        </div>
+      </div>
+    </div>
+    <svg class="wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+      <defs>
+        <linearGradient id="gradWave" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color: rgba(1,1,3,1);" />
+          <stop offset="100%" style="stop-color: rgba(0,37,176,1);" />
+        </linearGradient>
+      </defs>
+      <path fill="url(#gradWave)" d="M0,250 C360,300 720,200 1080,250 C1320,280 1440,200 1440,200 L1440,300 L0,300 Z"></path>
+    </svg>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="projetos" id="projetos"> 
+    <div class="wave wave-top"></div>
+    <div class="container">
+      <h2>Nossos Projetos</h2>
+      <div class="projetos-grid">
+        <div class="projeto">
+          <a href="https://replit.com/@juliasilva1378/Synistanai">
+            <img src="img/Synistanai.png" alt="Projeto 1">
+            <br>
+            <h3>Synistanai</h3>
+            <p>Um site sobre o curso técnico de D.S</p>
+          </a>
+        </div>
+        <div class="projeto">
+          <a href="https://replit.com/@juliasilva1378/Justice-Projeto">
+            <img src="img/Justice.png" alt="Projeto 2">
+            <br>
+            <H3>Justice</H3>
+            <p>Brasil e sua violência... Justice !!</p>
+          </a>
+        </div>
+        <div class="projeto">
+          <a href="https://replit.com/@juliasilva1378/Projeto-Brasas">
+            <img src="img/Brasa's.png" alt="Projeto 3">
+            <br>
+            <h3>Brasa's</h3>
+            <p>A cultura rica do nosso Brasil</p>
+          </a>
+        </div>
+        <!--INVISIVEL-->
+        <div class="projeto" style="visibility: hidden;">
+          <img src="img/projeto.png" alt="Projeto 4">
+          <h3>NOME</h3>
+          <p>Descrição projeto 4</p>
+        </div>
+      </div>
+    </div>
+    <svg class="wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+      <path fill="#ffffff" d="M0,250 C360,300 720,200 1080,250 C1320,280 1440,200 1440,200 L1440,300 L0,300 Z"></path>
+    </svg>
+  </section>
+
+  <!-- EQUIPE -->
+  <section class="equipe" id="equipe">
+    <div class="container">
+      <h2>Equipe GAMA</h2>
+      <p style="color: black;">Nossa equipe de desenvolvedores transforma ideias complexas em soluções eficientes e escaláveis.</p>
+        
+      <div class="equipe-slider">
+        <button class="equipe-btn prev" aria-label="Previous"><span>&#10094;</span></button>        
+        <div class="equipe-wrapper">
+          <div class="equipe-grid">
+            <!-- 1 -->
+            <div class="membro">
+              <div class="membro-img"><img src="img/membros/carlos.jpg" alt="Nome 1"></div>
+                <div class="membro-content">
+                    <h3>Carlos E. C. e Silva</h3>
+                    <p>DBA e QA</p>
+                    <div class="socials">
+                        <a href="https://github.com/cadu01234" target="_blank" aria-label="github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/carlos-silva-84524334a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cadu_jvn?igsh=N25jNjdueTZ3bXQ0&utm_source=qr" target="_blank" aria-label="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- 2 -->
+              <div class="membro">
+                <div class="membro-img"><img src="img/membros/david.jpg" alt="Nome 2"></div>
+                <div class="membro-content">
+                  <h3>David A. S. do Nascimento</h3>
+                  <p>Desenvolvedor Front-End e Designer</p>
+                  <div class="socials">
+                      <a href="https://github.com/DavidASN" target="_blank" aria-label="github">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/david-alexandre-souza-do-nascimento-88339a367?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="linkedin">
+                          <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a href="https://www.instagram.com/dvd.alx.nasc?igsh=MXZwNGhtMGNhMHk1dg==" target="_blank" aria-label="instagram">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div class="membro">
+                  <div class="membro-img"><img src="img/membros/brayan.jpg" alt="Nome 3"></div>
+                  <div class="membro-content">
+                    <h3>Gustavo B. R. de Araujo</h3>
+                    <p>DBA e QA</p>
+                    <div class="socials">
+                        <a href="https://github.com/BrayanGustavo01" target="_blank" aria-label="github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="http://linkedin.com/in/gustavo-brayan-51297319b" target="_blank" aria-label="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_guuh_01_?igsh=b2RicmdyN2tydGVp&utm_source=qr" target="_blank" aria-label="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- 4 -->
+              <div class="membro">
+                <div class="membro-img"><img src="img/membros/fernandes.jpg" alt="Nome 4"></div>
+                <div class="membro-content">
+                  <h3>Gustavo F. C. Silva</h3>
+                  <p>Desenvolvedor Front-End e Designer</p>
+                  <div class="socials">
+                      <a href="https://github.com/Gusxt-untouchable" target="_blank" aria-label="github">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://linkedin.com" target="_blank" aria-label="linkedin">
+                          <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a href="https://www.instagram.com/o.gusty?igsh=MTBpdnQzajB0ajNlbg%3D%3D&utm_source=qr" target="_blank" aria-label="instagram">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5 -->
+              <div class="membro">
+                <div class="membro-img"><img src="img/membros/Machado.jpeg" alt="Nome 5"></div>
+                <div class="membro-content">
+                  <h3>Gustavo M. Rocha</h3>
+                  <p>Desenvolvedor Back-End</p>
+                  <div class="socials">
+                      <a href="https://github.com/Gustav0machado" target="_blank" aria-label="github">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/gustavo-machado-139225381" target="_blank" aria-label="linkedin">
+                          <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a href="https://www.instagram.com/little.machas?igsh=dmZnMWg0ZnYydTN6" target="_blank" aria-label="instagram">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6 -->
+              <div class="membro">
+                <div class="membro-img"><img src="img/membros/quinta.jpg" alt="Nome 6"></div>
+                <div class="membro-content">
+                  <h3>Gustavo Q. M. Franco</h3>
+                  <p>QA</p>
+                  <div class="socials">
+                      <a href="https://github.com/GustavoQuintanilia" target="_blank" aria-label="github">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://br.linkedin.com/in/gustavo-quintanilia-695988381" target="_blank" aria-label="linkedin">
+                          <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a href="https://www.instagram.com/gustavoquintanilia?igsh=MW5vcWh4c3A0bXc5cA==" target="_blank" aria-label="instagram">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 7 -->
+              <div class="membro">
+                <div class="membro-img"><img src="img/membros/isa.jpg" alt="Nome 7"></div>
+                <div class="membro-content">
+                  <h3>Isabella L. G. dos Santos</h3>
+                  <p>Analista</p>
+                  <div class="socials">
+                      <a href="https://github.com/isaxsccp" target="_blank" aria-label="github">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/isabella-louise-10506a26b?" target="_blank" aria-label="linkedin">
+                          <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a href="https://www.instagram.com/isaxsccp?" target="_blank" aria-label="instagram">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 8 -->
+              <div class="membro">
+                <div class="membro-img"><img src="img/membros/julia.jpg" alt="Nome 8"></div>
+                <div class="membro-content">
+                  <h3>Julia A. C. da Silva</h3>
+                  <p>Desenvolvedor Front-End e Designer</p>
+                  <div class="socials">
+                      <a href="https://github.com/juliaayomide" target="_blank" aria-label="github">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://br.linkedin.com/in/julia-ayomide-0b9b1a2aa" target="_blank" aria-label="linkedin">
+                          <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a href="https://www.instagram.com/ayomide.ju?igsh=MW5vcWh4c3A0bXc5cA==" target="_blank" aria-label="instagram">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 9 -->
+              <div class="membro">
+                <div class="membro-img"><img src="img/membros/moises.jpg" alt="Nome 9"></div>
+                <div class="membro-content">
+                  <h3>Moisés N. Ramos</h3>
+                  <p>DBA e QA</p>
+                  <div class="socials">
+                      <a href="https://github.com/Moises2506" target="_blank" aria-label="github">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/mois%C3%A9s-nascimento-3789a727b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="linkedin">
+                          <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a href="https://www.instagram.com/moises76h?igsh=MWQxenA0cTNlMXlj" target="_blank" aria-label="instagram">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 10 -->
+              <div class="membro">
+                <div class="membro-img"><img src="img/membros/vittor.jpg" alt="Nome 10"></div>
+                <div class="membro-content">
+                  <h3>Vittor N. Sirqueira</h3>
+                  <p>Gerente de Projetos e Desenvolvedor Back-End</p>
+                  <div class="socials">
+                      <a href="https://github.com/VittorN-01" target="_blank" aria-label="github">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/vittor-nascimento-sirqueira-089997276" target="_blank" aria-label="linkedin">
+                          <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a href="https://www.instagram.com/vittin_sirqueira/" target="_blank" aria-label="instagram">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+              <button class="equipe-btn next" aria-label="Next"><span>&#10095;</span></button>
+          </div>
+      </div>
+      
+      <svg class="wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+          <defs>
+              <linearGradient id="gradWave" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color: rgba(1,1,3,1);" />
+                  <stop offset="100%" style="stop-color: rgba(0,37,176,1);" />
+              </linearGradient>
+          </defs>
+          <path fill="url(#gradWave)" d="M0,250 C360,300 720,200 1080,250 C1320,280 1440,200 1440,200 L1440,300 L0,300 Z"></path>
+      </svg>
+  </section>
+
+  <!-- PARCEIROS  ARRUMAR-->
+  <section class="parceiros" id="parceiros">
+    <div class="container">
+      <h2>Empresas Parceiras</h2>
+      <p>Contamos com empresas parceiras que compartilham nossa visão de inovação e excelência, fortalecendo nosso ecossistema tecnológico e ampliando o impacto das soluções que entregamos.</p>
+      <div class="logos">
+        <img src="img/outlier.png" alt="Logo 1">
+        <img src="img/Somnium.png" alt="Logo 2">
+        <img src="img/trinity.png" alt="Logo 3">
+      </div>
+    </div>
+    <svg class="wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+      <path fill="#ffffff" d="M0,250 C360,300 720,200 1080,250 C1320,280 1440,200 1440,200 L1440,300 L0,300 Z"></path>
+    </svg>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="fale-conosco">
+    <h2 style="text-align: center; margin-bottom: 50px;">Fale Conosco</h2>
+    <div class="container contato-grid">
+      <div class="contato-texto">
+        <h3>Tem uma dúvida, sugestão ou feedback?</h3>
+        <p>Mande uma mensagem pro nosso time agora mesmo!</p>
+      </div>
+      <form class="contato-form">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" placeholder="Ex: Carla Feitosa" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ex: Josh@gmail.com" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="Ex: 11 93490-5454">
+            </div>
+            
+            <div class="form-group">
+                <label for="assunto">Selecione o assunto</label>
+                <select id="assunto" required>
+                    <option value="" disabled selected>Selecione um assunto</option>
+                    <option value="suporte">Suporte</option>
+                    <option value="vendas">Vendas</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+    <svg class="wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+      <defs>
+        <linearGradient id="gradWave" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color: rgba(1,1,3,1);" />
+          <stop offset="100%" style="stop-color: rgba(0,37,176,1);" />
+        </linearGradient>
+      </defs>
+      <path fill="url(#gradWave)" d="M0,250 C360,300 720,200 1080,250 C1320,280 1440,200 1440,200 L1440,300 L0,300 Z"></path>
+    </svg>
+  </section>
+
+  <!-- FOOTER -->
+  <section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>GAMA</h3>
+          <p>Com soluções inovadoras, entregamos tecnologia de qualidade para o mundo digital.</p>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#quem-somos">Sobre nós</a></li>
+              <li><a href="#fale-conosco">Contato</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+            </ul>
+          </div>
+            
+          <div class="footer-column">
+            <h4>Serviços</h4>
+            <ul>
+              <li><a href="#projetos">Nossos Projetos</a></li>
+              <li><a href="#equipe">Equipe Gama</a></li>
+              <li><a href="#parceiros">Parceiros</a></li>
+            </ul>
+          </div>
+            
+          <div class="footer-column">
+            <h4>Suporte</h4>
+            <ul>
+              <li><a href="#fale-conosco">Ajuda</a></li>
+              <li><a href="#fale-conosco">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 - Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </section>
+
+  <script src="script/menuLateral.js"></script>
+  <script src="script/carrousel.js"></script>
+  <script src="script/slideMembros.js"></script>
+  <script src="script/form.js"></script>
+</body>
+</html>
+
+
