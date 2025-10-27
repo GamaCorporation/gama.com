@@ -139,9 +139,7 @@ section {
 }
 
 .equipe-wrapper { 
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
   width: 100%;
   padding: 10px 0;
   scrollbar-width: none; 

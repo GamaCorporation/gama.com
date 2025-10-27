@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {    
-  // Slider da equipe - Mostrar 1 membro por vez em dispositivos móveis
 
   const initEquipeSlider = () => {
     const wrapper = document.querySelector('.equipe-wrapper');
     const grid = document.querySelector('.equipe-grid');
+    grid.style.transition = 'transform 0.4s ease'; 
     const members = document.querySelectorAll('.membro');
     const prevBtn = document.querySelector('.equipe-btn.prev');
     const nextBtn = document.querySelector('.equipe-btn.next');
@@ -13,16 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     const gap = 25; // mesmo valor do CSS
 
-    // Pega a largura real de cada card
+  
     const getMemberWidths = () => Array.from(members).map(m => m.offsetWidth + gap);
 
-    // Função para atualizar o slider
+   
     const updateSlider = () => {
         const widths = getMemberWidths();
         const translateX = -widths.slice(0, currentIndex).reduce((acc, w) => acc + w, 0);
         grid.style.transform = `translateX(${translateX}px)`;
 
-        // Mostrar/ocultar botões
+     
         if (prevBtn) prevBtn.style.display = currentIndex > 0 ? 'flex' : 'none';
         if (nextBtn) nextBtn.style.display = currentIndex < members.length - 1 ? 'flex' : 'none';
     };
@@ -38,15 +38,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     if (nextBtn) {
-      nextBtn.addEventListener('click', () => {
-        if (currentIndex < members.length - 1) {
-          currentIndex++;
-          updateSlider();
-        }
-      });
-    }
+  nextBtn.addEventListener('click', () => {
+    const widths = getMemberWidths();
+    const totalWidth = widths.reduce((acc, w) => acc + w, 0);
+    const visibleWidth = wrapper.offsetWidth;
+    const currentOffset = widths.slice(0, currentIndex + 1).reduce((acc, w) => acc + w, 0);
     
-    // Recalcular em redimensionamento
+    if (currentOffset < totalWidth - visibleWidth) {
+      currentIndex++;
+    }
+    updateSlider();
+  });
+}
+    
+    
     let resizeTimeout;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimeout);
@@ -56,21 +61,21 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 250);
     });
     
-    // Inicializar
+   
     updateSlider();
     
-    // Esconder botões inicialmente se não for mobile
+    
     if (window.innerWidth > 992) {
       if (prevBtn) prevBtn.style.display = 'none';
       if (nextBtn) nextBtn.style.display = 'none';
     }
   };
   
-  // Inicializar o slider
+  
   initEquipeSlider();
 });
 
-// Script para garantir que os links sociais estão funcionando
+
 document.addEventListener('DOMContentLoaded', function() {
   const links = document.querySelectorAll('.socials a');
   
