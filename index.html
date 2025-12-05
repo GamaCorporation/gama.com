@@ -49,7 +49,7 @@
         <div class="carrossel-conteudo">
           <div class="carrossel-legenda">
             <h1><span>Inovações</span> em cada passo</h1>
-            <a href="#projetos" class="btn">Saiba mais</a>
+            <a href="#quem-somos" class="btn">Saiba mais</a>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@
         <div class="carrossel-conteudo">
           <div class="carrossel-legenda">
             <h1><span>Modernidade</span> que conecta</h1>
-            <a href="#equipe" class="btn">Saiba mais</a>
+            <a href="#quem-somos" class="btn">Saiba mais</a>
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@
   <section class="quem-somos" id="quem-somos">
     <div class="container">
       <h2>Quem somos?</h2>
-      <p>Somos uma empresa de tecnologia que cria soluções inteligentes, inovadoras e sob medida para o mundo digital trabalhando sempre com : </p>
+      <p style="margin-top: 15px;margin-bottom: 15px;">Somos uma empresa de tecnologia que cria soluções inteligentes, inovadoras e sob medida para o mundo digital trabalhando sempre com : </p>
       <div class="cards">
         <div class="card">
           <img src="img/img1.png">
@@ -125,7 +125,7 @@
             <img src="img/Synistanai.png" alt="Projeto 1">
             <br>
             <h3>Synistanai</h3>
-            <p>Um site sobre o curso técnico de D.S</p>
+            <p>Projeto informativo sobre o curso técnico de desenvolvimento de sistemas no primeiro ano.</p>
           </a>
         </div>
         <div class="projeto">
@@ -133,7 +133,7 @@
             <img src="img/Justice.png" alt="Projeto 2">
             <br>
             <H3>Justice</H3>
-            <p>Brasil e sua violência... Justice !!</p>
+            <p>Projeto sobre argumentos de uma redação sobre a violência no Brasil.</p>
           </a>
         </div>
         <div class="projeto">
@@ -141,7 +141,7 @@
             <img src="img/Brasa's.png" alt="Projeto 3">
             <br>
             <h3>Brasa's</h3>
-            <p>A cultura rica do nosso Brasil</p>
+            <p>Projeto sobre a valorização da cultura brasileira.</p>
           </a>
         </div>
         <!--INVISIVEL-->
@@ -460,7 +460,7 @@
                 <select id="assunto" required>
                     <option value="" disabled selected>Selecione um assunto</option>
                     <option value="suporte">Suporte</option>
-                    <option value="vendas">Vendas</option>
+                    <option value="vendas">Sugestão</option>
                     <option value="outros">Outros</option>
                 </select>
             </div>
@@ -471,7 +471,7 @@
             <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
         </div>
         
-        <button type="submit" class="btn">Enviar</button>
+        <button style="background-color:'000';" type="submit" class="btn">Enviar</button>
       </form>
     </div>
     <svg class="wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
@@ -507,7 +507,7 @@
           <div class="footer-column">
             <h4>Serviços</h4>
             <ul>
-              <li><a href="#projetos">Nossos Projetos</a></li>
+              <li><a href="#projetos">Projetos</a></li>
               <li><a href="#equipe">Equipe Gama</a></li>
               <li><a href="#parceiros">Parceiros</a></li>
             </ul>
@@ -528,10 +528,32 @@
     </footer>
   </section>
 
+  <div id="modal-msg" class="modal-msg hidden">
+    <div class="modal-msg-content">
+      <h3 id="modal-msg-titulo">Mensagem</h3>
+      <p id="modal-msg-texto"></p>
+      <button id="modal-msg-btn">OK</button>
+    </div>
+  </div>
+
   <script src="script/menuLateral.js"></script>
   <script src="script/carrousel.js"></script>
   <script src="script/slideMembros.js"></script>
   <script src="script/form.js"></script>
+  <script>
+    function showMessage(titulo, texto = "") {
+      const modal = document.getElementById("modal-msg");
+      document.getElementById("modal-msg-titulo").innerText = titulo;
+      document.getElementById("modal-msg-texto").innerText = texto;
+
+      modal.classList.remove("hidden");
+
+      document.getElementById("modal-msg-btn").onclick = () => {
+        modal.classList.add("hidden");
+      };
+    }
+  </script>
+
 </body>
 </html>
 

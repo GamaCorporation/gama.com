@@ -1,4 +1,3 @@
-/* RESPONSIVO GERAL */
 @media (max-width: 1200px) {
   .container {
     width: 95%;
@@ -6,7 +5,6 @@
   }
 }
 
-/* NAVBAR RESPONSIVA - DROPDOWN LATERAL */
 @media (max-width: 992px) {
   .navbar {
     padding: 15px 20px;
@@ -99,24 +97,23 @@
   }
 }
 
-/* CARROSSEL PRINCIPAL RESPONSIVO */
 @media (max-width: 768px) {
   .hero-carrossel {
-    height: 400px; /* define altura do carrossel no mobile */
+    height: 400px; 
   }
 
   .carrossel-item {
     display: flex;
-    justify-content: center; /* centraliza horizontal */
-    align-items: center;     /* centraliza vertical */
-    height: 100%;            /* ocupa a altura do pai */
+    justify-content: center; 
+    align-items: center;     
+    height: 100%;            
   }
 
   .carrossel-conteudo {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* vertical */
-    align-items: center !important;     /* horizontal */
+    justify-content: center; 
+    align-items: center !important;     
     text-align: center;
     width: 90%;
     max-width: 500px;
@@ -135,7 +132,6 @@
   }
 }
 
-/* EQUIPE - MOBILE SLIDER */
 @media (max-width: 992px) {
   .equipe-slider {
     position: relative;
@@ -191,7 +187,6 @@
     right: 5px;
   }
   
-  /* Estilo para botões desabilitados */
   .equipe-btn[style*="cursor: not-allowed"] {
     opacity: 0.3;
     cursor: not-allowed;
@@ -202,7 +197,6 @@
   }
 }
 
-/* DESKTOP - Esconder setas e permitir scroll normal */
 @media (min-width: 993px) {
   .equipe-wrapper {
     overflow-x: auto;
@@ -229,14 +223,12 @@
   }
 }
 
-/* Ajuste para tablets (opcional) */
 @media (max-width: 1200px) and (min-width: 993px) {
   .membro {
     flex: 0 0 calc(33.333% - 17px);
   }
 }
 
-/* OUTROS AJUSTES RESPONSIVOS */
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
@@ -335,7 +327,6 @@
   }
 }
 
-/* Ajustes para telas muito pequenas */
 @media (max-width: 360px) {
   .btn {
     padding: 8px 16px;

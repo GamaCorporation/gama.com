@@ -1,9 +1,12 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 section {
   position: relative;
   scroll-margin-top: 80px;
 }
 
-/* HERO */
 .hero {
   background: linear-gradient(135deg, #001f4d, #0056ff);
   color: #fff;
@@ -31,47 +34,53 @@ section {
   max-width: 400px;
 }
 
-/* QUEM SOMOS */
 .quem-somos {
   text-align: center;
   padding: 65px 0;
   background: #fff;
   color: #000;
+   font-family: poppins, sans-serif;
 }
+
 .cards {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-top: 30px;
-  margin-bottom: 10%; /* diminui um pouco o espaço inferior */
-  flex-wrap: wrap; /* garante responsividade */
+  margin-bottom: 10%; 
+  flex-wrap: wrap;
+  font-family: poppins, sans-serif; 
 }
+
 .card {
   background: #0D00C1;
   color: #fff;
-  padding: 15px;         /* menos espaço interno */
+  padding: 15px;         
   border-radius: 10px;
-  width: 220px;          /* largura fixa menor */
-  max-width: 250px;      /* evita que cresçam muito */
+  width: 220px;          
+  max-width: 250px;      
   text-align: center;
 }
+
 .card img {
-  width: 60px;           /* imagem menor */
+  width: 60px;           
   height: auto;
   margin-bottom: 10px;
 }
+
 .card h3 {
-  font-size: 1.1rem;     /* título mais compacto */
+  font-size: 1.1rem;     
 }
 
 .card p {
-  font-size: 0.9rem;     /* texto menor */
+  font-size: 0.9rem;     
 }
-/* PROJETOS */
+
 .projetos {
   background: linear-gradient(to right, rgba(1, 1, 3, 1), rgba(0, 37, 176, 1)); 
   padding: 60px 0;
   text-align: center;
+   font-family: 'poppins', sans-serif;
 }
 
 .projetos-grid {
@@ -81,6 +90,7 @@ section {
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .projeto {
@@ -89,14 +99,16 @@ section {
   overflow: hidden;
   flex: 1 1 calc(50% - 20px);
   max-width: 300px;
+  
 }
 
 .projeto img {
   width: 100%;
   display: block;
+  border-radius: 10px;
+  border: #fff solid 3px;
 }
 
-/* EQUIPE */
 .equipe {
   background: #fff;
   color: #000;
@@ -117,7 +129,6 @@ section {
   margin: 0 auto 40px;
 }
 
-/* Slider equipe */
 .equipe-slider {
   position: relative;
   margin-top: 30px;
@@ -158,7 +169,6 @@ section {
   height: 590px;
 }
 
-/* cada card */
 .membro {
   flex: 0 0 calc(25% - 19px);
   background: #fff;
@@ -168,6 +178,7 @@ section {
   text-align: center;
   color: #111;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 80%;
 }
 
 .membro:hover {
@@ -175,7 +186,6 @@ section {
   box-shadow: 0 12px 20px rgba(0,0,0,0.15);
 }
 
-/* imagem cabeçalho do card */
 .membro-img {
   position: relative;
   height: 200px;
@@ -194,13 +204,12 @@ section {
   transform: scale(1.05);
 }
 
-/* texto */
 .membro-content {
   padding: 25px 15px 20px; 
   display: flex;
   flex-direction: column;
   justify-content: center; 
-  min-height: 160px; 
+  min-height: 140px; 
 }
 
 .membro h3 {
@@ -218,7 +227,6 @@ section {
   font-weight: 500;
 }
 
-/* ícones sociais */
 .socials {
   display: flex;
   justify-content: center;
@@ -281,7 +289,6 @@ section {
   opacity: 1;
 }
 
-/* EQUIPE */
 .equipe-btn {
   position: absolute;
   top: 50%;
@@ -294,7 +301,7 @@ section {
   height: 44px;
   border-radius: 50%;
   cursor: pointer;
-  display: flex !important; /* Força a exibição */
+  display: flex !important; 
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
@@ -318,7 +325,6 @@ section {
   right: -22px;
 }
 
-/* PARCEIROS */
 .parceiros {
   background: linear-gradient(to right, rgba(1, 1, 3, 1), rgba(0, 37, 176, 1));
   color: white;
@@ -343,20 +349,17 @@ section {
   object-fit: contain;
   margin: 0 15px;
   transition: transform 0.3s;
-
-  /* NOVOS ESTILOS */
-  background-color: rgba(255, 255, 255, 0.1); /* quadrado transparente */
-  border: 2px solid rgba(255, 255, 255, 0.2); /* borda leve */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  /* sombra */
-  padding: 20px; /* espaço interno p/ logo não colar na borda */
-  border-radius: 10px; /* cantos arredondados (opcional) */
+  background-color: rgba(132, 187, 254, 0.399); 
+  border: 2px solid rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  
+  padding: 20px; 
+  border-radius: 10px;
 }
 
 .parceiros .logos img:hover {
   transform: scale(1.05);
 }
 
-/* CONTATO */
 .contato {
   background: #ffffff;
   padding: 60px 0;
@@ -432,7 +435,7 @@ section {
 
 .contato-form button {
   padding: 14px;
-  background-color: #4299e1;
+  background-color: #0e2157;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -444,10 +447,9 @@ section {
 }
 
 .contato-form button:hover {
-  background-color: #3182ce;
+  background-color: #5c94c7;
 }
 
-/* FOOTER  */
 footer {
     background: linear-gradient(to right, rgba(1, 1, 3, 1), rgba(0, 37, 176, 1));
     color: #fff;

@@ -17,10 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarSlide(index);
   }
 
-  // Auto play a cada 5 segundos
   setInterval(proximoSlide, 5000);
 
-  // Clique nos indicadores
   dots.forEach((dot, i) => {
     dot.addEventListener("click", () => {
       index = i;

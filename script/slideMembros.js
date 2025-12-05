@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!wrapper || !grid || members.length === 0) return;
     
     let currentIndex = 0;
-    const gap = 25; // mesmo valor do CSS
+    const gap = 25; 
 
   
     const getMemberWidths = () => Array.from(members).map(m => m.offsetWidth + gap);
@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (nextBtn) nextBtn.style.display = currentIndex < members.length - 1 ? 'flex' : 'none';
     };
     
-    // Navegação
     if (prevBtn) {
       prevBtn.addEventListener('click', () => {
         if (currentIndex > 0) {
@@ -85,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Verifica se o Font Awesome foi carregado
   const checkFontAwesome = setInterval(function() {
     if (window.FontAwesome) {
       console.log('Font Awesome carregado com sucesso!');
@@ -93,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }, 100);
 
-  // Timeout caso não carregue
   setTimeout(function() {
     if (!window.FontAwesome) {
       console.warn('Font Awesome não carregado. Verifique o link ou adicione localmente.');
